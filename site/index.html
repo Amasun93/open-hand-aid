@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OpenHandAid | 开源手展辅助手套</title>
+    <meta
+      name="description"
+      content="OpenHandAid 是一个由 Khub 罕见病开源社区发起的开源 3D 打印手部辅具项目。"
+    />
+    <link rel="stylesheet" href="./styles.css?v=bom-copy-1" />
+  </head>
+  <body data-active-page="project">
+    <header class="topbar" aria-label="页面导航">
+      <a class="brand" href="#project" aria-label="OpenHandAid 首页">
+        <img src="./assets/khub-logo.jpg" alt="K-Hub logo" />
+        <span>OpenHandAid</span>
+      </a>
+      <nav class="page-tabs" aria-label="页面标签">
+        <a href="#project" data-tab="project">🔎 项目</a>
+        <a href="#fit" data-tab="fit">👥 适用</a>
+        <a href="#reproduce" data-tab="reproduce">🧰 复现</a>
+        <a href="#join-status" data-tab="cobuild">🌿 共建</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section id="project" class="hero section" data-page="project">
+        <div class="hero-copy">
+          <p class="eyebrow">🔓 Khub 开源项目 001</p>
+          <h1>让受限的手，<br />多一点可控感</h1>
+          <p class="lead">
+            OpenHandAid 是一个由病友真实需求出发的开源 3D 打印手部辅具项目。我们正在用低成本材料、可复现结构和开放协作，改进手部伸展与基础抓握辅助工具。
+          </p>
+          <div class="project-status" aria-label="项目当前状态">
+            <span><strong>当前版本</strong> 可演示原型</span>
+            <span><strong>模型</strong> MakerWorld 已开放</span>
+            <span><strong>物料</strong> 初版可看</span>
+            <span><strong>打印参数</strong> 待完善</span>
+            <span><strong>组装教程</strong> 待完善</span>
+            <span><strong>医学属性</strong> 非医疗器械</span>
+          </div>
+          <div class="hero-routes" aria-label="首屏行动入口">
+            <a class="route-card main-route" href="#what">
+              <span>🔎 了解项目</span>
+              <strong>先看清楚它是什么、适合谁、现在做到哪一步。</strong>
+            </a>
+            <a class="route-card" href="#fit">
+              <span>👥 适用人群</span>
+              <strong>先确认适用人群、动作场景和当前边界。</strong>
+            </a>
+            <a class="route-card" href="#reproduce">
+              <span>🧰 查看复现</span>
+              <strong>下载模型、准备物料，先把复现第一步走通。</strong>
+            </a>
+            <a class="route-card" href="#join-status">
+              <span>🌿 参与共建</span>
+              <strong>打印、开发、研究和公益支持，都能找到入口。</strong>
+            </a>
+          </div>
+          <p class="notice">
+            当前版本仍在迭代，不属于医疗器械，不替代医生、康复师或专业治疗建议。
+          </p>
+        </div>
+        <figure class="hero-media">
+          <img
+            src="./assets/hero-openhand-clean.jpg"
+            alt="OpenHandAid 开源手辅封面图"
+          />
+        </figure>
+      </section>
+
+      <section id="what" class="section intro" data-page="project">
+        <div class="section-title">
+          <p class="eyebrow">🧭 这是什么</p>
+          <h2>一个开源的 3D 打印手部辅具项目</h2>
+        </div>
+        <div class="intro-grid">
+          <article>
+            <h3>🧩 真实需求</h3>
+            <ul class="key-points">
+              <li>面向 FSHD、CMT、MG、ALS 等相关病友</li>
+              <li>关注吃饭、拿水杯、打字、回微信等日常动作</li>
+              <li>从真实生活困难出发，不先从技术出发</li>
+            </ul>
+          </article>
+          <article>
+            <h3>🧤 当前方案</h3>
+            <ul class="key-points">
+              <li>3D 打印骨架提供基础支撑</li>
+              <li>柔性固定结构、魔术贴和弹力带辅助调节</li>
+              <li>支持部分伸展、轻量抓握、夹取和撑开动作</li>
+            </ul>
+          </article>
+          <article>
+            <h3>🌱 开源共建</h3>
+            <ul class="key-points">
+              <li>不同手型、病种和打印条件需要持续适配</li>
+              <li>病友反馈推动真实问题进入迭代</li>
+              <li>打印志愿者、开发者和公益伙伴共同改进</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="fit" class="section fit" data-page="fit">
+        <div class="section-title">
+          <p class="eyebrow">👥 适用人群</p>
+          <h2>哪些人群可以关注，哪些动作值得测试</h2>
+        </div>
+        <figure class="concept-figure">
+          <img src="./assets/concept-fit-scenes.png" alt="佩戴手部辅具后进行拿杯、用筷子、打字和使用手机等日常动作的概念示意图" />
+          <figcaption>概念示意：围绕拿杯、用筷子、打字和使用手机等轻量动作，说明项目当前关注的使用场景。</figcaption>
+        </figure>
+        <div class="split">
+          <div class="copy-block">
+            <h3>✅ 可能适合关注的人群</h3>
+            <div class="condition-tags" aria-label="相关病症或状态示例">
+              <span>FSHD 面肩肱型肌营养不良</span>
+              <span>CMT 腓骨肌萎缩症</span>
+              <span>MG 重症肌无力</span>
+              <span>ALS 肌萎缩侧索硬化</span>
+              <span>脑卒中 / 脑出血后遗症</span>
+              <span>手部屈肌张力增高</span>
+            </div>
+            <ul class="check-list">
+              <li>手指自然张开困难，抓握稳定性不足的人。</li>
+              <li>希望改善拿杯、拿碗、拿筷子、打字等轻量日常动作的人。</li>
+              <li>有明确动作目标，愿意反馈佩戴体验的人。</li>
+              <li>能在家属、志愿者或共建者协助下尝试调试的人。</li>
+            </ul>
+          </div>
+          <div class="copy-block use-scenes">
+            <h3>🎯 重点改善的动作场景</h3>
+            <ul>
+              <li>手掌撑开、手指伸展。</li>
+              <li>拿杯、拿碗、拿筷子等轻量抓握。</li>
+              <li>打字、操作手机等需要手指位置辅助的动作。</li>
+              <li>居家生活中希望多一点自主完成的动作。</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="current" class="section current" data-page="project">
+        <div class="section-title">
+          <p class="eyebrow">🧪 这一代做到什么</p>
+          <h2>当前版本已经能演示哪些能力</h2>
+        </div>
+        <div class="feature-row">
+          <div class="feature-copy">
+            <p>
+              当前开源版本已经能展示手指伸展辅助和部分日常动作辅助。它的目标是顺着使用者发力节奏，提供可调节的被动弹力辅助。
+            </p>
+            <div class="metric-grid">
+              <div>
+                <span>🧱 材料</span>
+                <strong>PETG / TPU95A</strong>
+              </div>
+              <div>
+                <span>🔩 结构</span>
+                <strong>3D 打印骨架 + 魔术贴</strong>
+              </div>
+              <div>
+                <span>🧭 定位</span>
+                <strong>可复现原型</strong>
+              </div>
+            </div>
+          </div>
+          <div class="image-strip" aria-label="项目图片">
+            <figure>
+              <img src="./assets/current-test-scene.jpg" alt="项目测试与展示场景" />
+              <figcaption>真实测试场景：早期原型已进入病友体验与反馈环节。</figcaption>
+            </figure>
+            <figure>
+              <img src="./assets/current-print-process.jpg" alt="3D 打印准备界面与零件" />
+              <figcaption>打印准备过程：把结构拆成可复现的打印零件。</figcaption>
+            </figure>
+            <figure>
+              <img src="./assets/current-model-structure.jpg" alt="辅助手套结构模型细节" />
+              <figcaption>结构模型展示：保留可修改、可迭代的开源模型基础。</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="demo" class="section demo" data-page="project">
+        <div class="section-title">
+          <p class="eyebrow">🎥 真实演示</p>
+          <h2>从一个生活动作，看见继续迭代的价值</h2>
+        </div>
+        <div class="video-panel">
+          <div class="video-frame">
+            <video
+              controls
+              preload="metadata"
+              poster="./assets/demo-cover.jpg"
+            >
+              <source src="./assets/demo-chopsticks.mp4" type="video/mp4" />
+              当前浏览器不支持视频播放。
+            </video>
+          </div>
+          <div class="demo-copy">
+            <h3>🥢 佩戴后使用筷子的场景演示</h3>
+            <div class="before-after">
+              <article>
+                <span>以前卡在哪里</span>
+                <ul>
+                  <li>手指不容易主动张开。</li>
+                  <li>拿筷子时夹持角度不稳定。</li>
+                  <li>吃饭这类日常动作需要反复尝试或家人协助。</li>
+                </ul>
+              </article>
+              <article>
+                <span>戴上后能做什么</span>
+                <ul>
+                  <li>辅助手指撑开，给筷子留出夹持位置。</li>
+                  <li>通过外部结构提供支撑，帮助完成夹取动作。</li>
+                  <li>让“自己尝试完成一件小事”变得更可行。</li>
+                </ul>
+              </article>
+              <article>
+                <span>还需要继续优化</span>
+                <ul>
+                  <li>佩戴便捷性、舒适度和不同手型适配。</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="pain" class="section pain" data-page="project">
+        <div class="section-title">
+          <p class="eyebrow">🧯 下一步要改进什么</p>
+          <h2>把当前难点讲清楚，下一轮迭代才有方向</h2>
+        </div>
+        <figure class="concept-figure">
+          <img src="./assets/concept-iteration-gaps.png" alt="佩戴步骤、尺寸测量、舒适度和复现资料等迭代问题的概念示意图" />
+          <figcaption>概念示意：当前版本仍需要在佩戴、尺寸、舒适度和复现资料上继续优化。</figcaption>
+        </figure>
+        <div class="pain-grid">
+          <article>
+            <span>01</span>
+            <h3>🪢 佩戴流程需要简化</h3>
+            <p>部分使用者仍可能需要家人协助完成佩戴和松紧调整。</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>📏 尺寸适配需要更精细</h3>
+            <p>手背宽度、手指长度、关节位置差异都需要更标准的测量和缩放规则。</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>🩹 舒适度还需要更多测试</h3>
+            <p>硬质部件、弹力带和魔术贴可能造成压痛、勒痕或滑动。</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>📘 复现资料需要完善</h3>
+            <p>物料清单、打印参数、组装步骤和常见问题需要整理成稳定文档。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="roadmap" class="section branches" data-page="cobuild">
+        <div class="section-title">
+          <p class="eyebrow">🌿 开源路线图</p>
+          <h2>从一个原型，分出多条共建路线</h2>
+        </div>
+        <figure class="concept-figure flow-figure">
+          <div class="flow-stage">
+            <img src="./assets/concept-dev-tree-flow.png" alt="病友需求进入 OpenHandAid 原型后，分支到火种开发、打印复现、尺寸适配、医学团队接力和公益支持的开源共建示意图" />
+            <div class="flow-labels" aria-hidden="true">
+              <span class="flow-label label-need">病友真实需求</span>
+              <span class="flow-label label-core">OpenHandAid 当前原型</span>
+              <span class="flow-label label-seed">火种开发</span>
+              <span class="flow-label label-print">打印复现</span>
+              <span class="flow-label label-fit">尺寸适配</span>
+              <span class="flow-label label-medical">医学团队接力</span>
+              <span class="flow-label label-public">公益与志愿支持</span>
+              <span class="flow-label label-next">下一轮版本</span>
+            </div>
+          </div>
+          <figcaption>概念示意：从病友需求、火种开发、打印复现到团队接力，项目以公开分支持续迭代。</figcaption>
+        </figure>
+        <div class="branch-list">
+          <article><h3>🩹 舒适度</h3><p>导角、包覆层、柔性材料、局部压痛优化。</p></article>
+          <article><h3>👌 佩戴便捷</h3><p>减少魔术贴步骤，让患者更容易独立佩戴。</p></article>
+          <article><h3>📏 尺寸适配</h3><p>建立手掌宽度、手指长度、手背结构的测量规则。</p></article>
+          <article><h3>🧪 材料替代</h3><p>测试 TPU、PETG、硅胶包覆、弹力带替代方案。</p></article>
+          <article><h3>📘 制作复现</h3><p>完善物料清单、打印参数、组装教程和常见问题。</p></article>
+          <article><h3>⚙️ 高阶探索</h3><p>线控、电控、肌电等方向，但不能明显增加使用负担。</p></article>
+        </div>
+      </section>
+
+      <section id="reproduce" class="section reproduce" data-page="reproduce">
+        <div class="section-title">
+          <p class="eyebrow">🧰 复现入口</p>
+          <h2>想复现当前版本，先看这几件事</h2>
+        </div>
+        <div class="resource-grid">
+          <article class="resource-card is-open">
+            <span>模型已发布</span>
+            <h3>下载打印模型</h3>
+            <p>当前公开版本已放在 MakerWorld，可先从这里下载模型并查看页面说明。</p>
+            <a class="text-link" href="https://makerworld.com.cn/zh/models/2005480-kai-yuan-shou-zhan-fu-zhu-shou-tao?appSharePlatform=wx#profileId-2234460">进入 MakerWorld</a>
+          </article>
+          <article class="resource-card is-open">
+            <span>文档仓库</span>
+            <h3>查看开源记录</h3>
+            <p>GitHub 会逐步沉淀物料清单、教程、版本日志和问题反馈，方便后续共建。</p>
+            <a class="text-link" href="https://github.com/Amasun93/open-hand-aid" target="_blank" rel="noreferrer">进入 GitHub</a>
+          </article>
+          <article class="resource-card is-open">
+            <span>小件清单</span>
+            <h3>准备螺丝和绑带</h3>
+            <p>先把螺丝、魔术贴、橡胶圈和工具规格对齐，能减少复现时反复试错。</p>
+            <a class="text-link" href="#materials">查看物料清单</a>
+          </article>
+          <article class="resource-card is-missing">
+            <span>待完善</span>
+            <h3>确认打印设置</h3>
+            <p>后续会补齐 PETG / TPU95A 的喷嘴、层高、填充、支撑和摆放方向建议。</p>
+            <div class="placeholder compact">当前可先参考 MakerWorld 页面，复现后欢迎反馈实际参数。</div>
+          </article>
+          <article class="resource-card is-missing">
+            <span>待完善</span>
+            <h3>按步骤完成装配</h3>
+            <p>后续会把打印件清理、穿魔术贴、上螺丝和安装橡胶圈拆成步骤图。</p>
+            <div class="placeholder compact">第一版教程会优先补清楚：穿带、固定、调弹力和试戴检查。</div>
+          </article>
+          <article class="resource-card is-progress">
+            <span>已有视频</span>
+            <h3>先看能做到什么</h3>
+            <p>当前已有筷子夹取演示，后续还会补充拿杯、打字、使用手机等场景。</p>
+            <a class="text-link" href="#demo">查看演示</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="materials" class="section bom" data-page="reproduce">
+        <div class="section-title">
+          <p class="eyebrow">📦 基础物料</p>
+          <h2>买对小件，复现就少卡一步</h2>
+          <p class="section-lead">下面列出当前原型需要准备的小件、用途和入口。数量先按一套可演示原型估算，后续会随组装教程继续校准。</p>
+        </div>
+
+        <div class="materials-overview">
+          <figure class="materials-photo">
+            <img src="assets/bom-materials-realistic.png" alt="OpenHandAid 组装物料总览，包含 3D 打印件、螺丝、扳手、魔术贴和橡胶圈" />
+          </figure>
+          <div class="materials-summary">
+            <span>复现前先准备</span>
+            <h3>模型能下载，小件也要买对</h3>
+            <p>打印志愿者最容易卡住的不是模型下载，而是小件规格、裁剪位置和备用数量。这里把“买什么、用在哪里、准备多少”拆开。</p>
+            <div class="summary-tags" aria-label="物料状态">
+              <span>5 项外购小件</span>
+              <span>1 套打印件</span>
+              <span>含购买入口</span>
+              <span>数量后续校准</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bom-items" aria-label="基础物料采购清单">
+          <article class="bom-card">
+            <div class="bom-card-head">
+              <span class="material-icon">🔩</span>
+              <div>
+                <h3>固定螺丝</h3>
+                <p>倒边内六角螺丝 M3x5</p>
+              </div>
+            </div>
+            <dl>
+              <div><dt>建议准备</dt><dd>10+ 颗 / 套</dd></div>
+              <div><dt>主要用途</dt><dd>固定打印件连接点</dd></div>
+            </dl>
+            <a class="material-link" href="https://detail.tmall.com/item.htm?abbucket=13&id=752388141513&mi_id=00000rBt7IgIx6iQ-egqebvOxSD5iP4RQs2DBoFqsZapPNg&ns=1&priceTId=2147807e17787734196341160e12f8&skuId=5185600476755&spm=a21n57.1.hoverItem.4&utparam=%7B%22aplus_abtest%22%3A%22a4cb38cb2328e63710429c9b2e6c5e7d%22%7D&xxc=taobaoSearch" target="_blank" rel="noreferrer">查看店铺链接</a>
+          </article>
+
+          <article class="bom-card">
+            <div class="bom-card-head">
+              <span class="material-icon">🧷</span>
+              <div>
+                <h3>手掌魔术贴</h3>
+                <p>勾毛同体魔术贴 2cm</p>
+              </div>
+            </div>
+            <dl>
+              <div><dt>建议准备</dt><dd>1 条 / 套，按手掌长度裁剪</dd></div>
+              <div><dt>主要用途</dt><dd>手掌和手背位置固定</dd></div>
+            </dl>
+            <a class="material-link" href="https://detail.tmall.com/item.htm?id=922015743312&mi_id=0000xOKKt3ZWkic9tlKBoXdq--ogJ6buoJBzURggp3FSgdQ&spm=tbpc.boughtlist.suborder_itemtitle.1.75372e8dyKQX0t&skuId=5966974255158" target="_blank" rel="noreferrer">查看店铺链接</a>
+          </article>
+
+          <article class="bom-card">
+            <div class="bom-card-head">
+              <span class="material-icon">📏</span>
+              <div>
+                <h3>手指魔术贴</h3>
+                <p>勾毛同体魔术贴 0.5cm</p>
+              </div>
+            </div>
+            <dl>
+              <div><dt>建议准备</dt><dd>5-10 段 / 套，按手指位置裁剪</dd></div>
+              <div><dt>主要用途</dt><dd>指节固定件绑扎</dd></div>
+            </dl>
+            <a class="material-link" href="https://detail.tmall.com/item.htm?abbucket=13&id=43354742271&mi_id=0000iNcI992LwhIyzIwkVmWBPC48jxqh3gPxNPCiMOj1ZyU&ns=1&priceTId=2147848817787745991487899e10ec&skuId=90478391305&spm=a21n57.1.hoverItem.4&utparam=%7B%22aplus_abtest%22%3A%22fee0d2170025636be5e38580f1f5d526%22%7D&xxc=taobaoSearch" target="_blank" rel="noreferrer">查看店铺链接</a>
+          </article>
+
+          <article class="bom-card">
+            <div class="bom-card-head">
+              <span class="material-icon">🔧</span>
+              <div>
+                <h3>装配扳手</h3>
+                <p>球头 2mm</p>
+              </div>
+            </div>
+            <dl>
+              <div><dt>建议准备</dt><dd>1 把</dd></div>
+              <div><dt>主要用途</dt><dd>安装和调整 M3 螺丝</dd></div>
+            </dl>
+            <a class="material-link" href="https://detail.tmall.com/item.htm?id=802598162112&mi_id=0000jdMdXinMXuSd509SNs5qAyNCOvAYbajRsQE17crf_ZI&skuId=5464778868152&spm=tbpc.boughtlist.suborder_itemtitle.1.75372e8dyKQX0t" target="_blank" rel="noreferrer">查看店铺链接</a>
+          </article>
+
+          <article class="bom-card">
+            <div class="bom-card-head">
+              <span class="material-icon">⭕</span>
+              <div>
+                <h3>橡胶圈</h3>
+                <p>对折 7.5cm，宽 5mm</p>
+              </div>
+            </div>
+            <dl>
+              <div><dt>建议准备</dt><dd>6-10 个备用</dd></div>
+              <div><dt>主要用途</dt><dd>提供被动弹力辅助</dd></div>
+            </dl>
+            <a class="material-link" href="https://item.taobao.com/item.htm?id=798772596526&mi_id=00001loKbVjzk7XJnh5NIlTpz22x6qF5_Dn-aMWSJhb9sUs&skuId=5613637931682&spm=tbpc.boughtlist.suborder_itemtitle.1.75372e8dyKQX0t" target="_blank" rel="noreferrer">查看店铺链接</a>
+          </article>
+
+          <article class="bom-card print-card">
+            <div class="bom-card-head">
+              <span class="material-icon">🖨️</span>
+              <div>
+                <h3>3D 打印件</h3>
+                <p>手背框架、指节件、绑带连接件</p>
+              </div>
+            </div>
+            <dl>
+              <div><dt>建议准备</dt><dd>1 套当前公开模型</dd></div>
+              <div><dt>主要用途</dt><dd>提供支撑、连接和调节基础</dd></div>
+            </dl>
+            <a class="material-link" href="https://makerworld.com.cn/zh/models/2005480-kai-yuan-shou-zhan-fu-zhu-shou-tao?appSharePlatform=wx#profileId-2234460" target="_blank" rel="noreferrer">查看模型下载</a>
+          </article>
+        </div>
+
+        <div class="printed-parts">
+          <div class="subsection-title">
+            <span>打印件位置</span>
+            <h3>外购小件会装到这些结构上</h3>
+          </div>
+          <div class="material-gallery" aria-label="相关结构图片">
+            <figure class="material-card featured">
+              <img src="assets/part-hand-frame.png" alt="3D 打印手背骨架结构">
+              <figcaption><strong>手背骨架</strong><span>PETG / TPU95A 打印，承担主要支撑和连接。</span></figcaption>
+            </figure>
+            <figure class="material-card">
+              <img src="assets/part-finger.png" alt="3D 打印指节固定件">
+              <figcaption><strong>指节固定件</strong><span>配合 0.5cm 魔术贴，固定在手指位置。</span></figcaption>
+            </figure>
+            <figure class="material-card">
+              <img src="assets/part-strap-holder.png" alt="3D 打印绑带连接件">
+              <figcaption><strong>绑带连接件</strong><span>连接魔术贴、螺丝和弹力件，便于拆装调节。</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="progress" class="section progress" data-page="cobuild">
+        <div class="section-title">
+          <p class="eyebrow">🗓️ 项目进展</p>
+          <h2>用公开进度，让共建可追踪</h2>
+        </div>
+        <ol class="timeline">
+          <li><time>2025-05</time><span>项目启动，收集病友真实需求。</span></li>
+          <li><time>2025</time><span>孙大卫老师团队启动火种版本，完成多轮原型验证。</span></li>
+          <li><time>2026-01</time><span>模型在 MakerWorld 开源发布，Khub 发布项目介绍推文。</span></li>
+          <li><time>2026-05-14</time><span>第二次交接会议，南京医科大学团队接力下一轮迭代。</span></li>
+          <li><time>下一阶段</time><span>持续补充版本说明、测试反馈、组装教程和迭代方向。</span></li>
+        </ol>
+      </section>
+
+      <section id="need" class="section feedback" data-page="cobuild">
+        <div class="section-title">
+          <p class="eyebrow">💬 真实反馈</p>
+          <h2>让需求和改进建议进入下一轮迭代</h2>
+        </div>
+        <div class="feedback-grid">
+          <figure>
+            <img src="./assets/feedback-wechat-01.png" alt="公众号整理的病友沟通反馈截图" />
+            <figcaption>病友反馈显示，辅具能帮助打开手指、支撑拿水杯等动作，也提示仍需要继续调节适配。</figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/feedback-wechat-02.png" alt="公众号整理的测试反馈截图" />
+            <figcaption>细节调节后，佩戴效果和动作控制有所改善；这些真实体验会进入下一轮结构优化。</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="join-status" class="section handoff" data-page="cobuild">
+        <div class="section-title">
+          <p class="eyebrow">🧭 当前接力</p>
+          <h2>当前项目进展与接力团队</h2>
+        </div>
+        <div class="cobuild-strip" aria-label="参与方式概览">
+          <a href="#join"><strong>病友反馈</strong><span>提交动作困难和测试意向</span></a>
+          <a href="#join"><strong>打印复现</strong><span>复现模型并反馈打印问题</span></a>
+          <a href="#roadmap"><strong>开发迭代</strong><span>参与结构、材料和文档优化</span></a>
+          <a href="#join"><strong>公益支持</strong><span>支持材料、打印和对接资源</span></a>
+        </div>
+        <div class="handoff-layout">
+          <ol class="handoff-steps" aria-label="项目接力进度">
+            <li>
+              <time>需求发起</time>
+              <strong>Khub 罕见病开源社区</strong>
+              <span>从病友真实动作困难出发，连接需求、反馈和共建资源。</span>
+            </li>
+            <li>
+              <time>火种开发</time>
+              <strong>孙大卫老师团队 第一代原型</strong>
+              <span>把需求转化为可打印、可组装、可演示的当前版本。</span>
+            </li>
+            <li>
+              <time>开源发布</time>
+              <strong>MakerWorld + GitHub</strong>
+              <span>模型已公开发布，文档、物料清单、组装流程继续补齐。</span>
+            </li>
+            <li>
+              <time>接力迭代</time>
+              <strong>南京医科大学团队</strong>
+              <span>围绕舒适度、手型适配、康复工程和人机交互继续推进。</span>
+            </li>
+          </ol>
+          <div class="handoff-teams" aria-label="团队接力关系">
+            <article>
+              <span>01 火种版本</span>
+              <h3>孙大卫老师团队</h3>
+              <p>完成从需求理解到可用原型的早期探索，让项目有了第一批可复现材料。</p>
+              <ul>
+                <li>方案推进：孙大卫老师</li>
+                <li>设计、制作与测试：陈嘉琪、蒲新仪</li>
+              </ul>
+            </article>
+            <article>
+              <span>02 下一轮研发</span>
+              <h3>南京医科大学团队</h3>
+              <p>接力围绕结构舒适度、尺寸适配、材料替代和康复应用场景继续迭代。</p>
+              <ul>
+                <li>南京医科大学生物医学工程与信息学院</li>
+                <li>周宇轩老师团队</li>
+              </ul>
+            </article>
+            <article>
+              <span>03 开源与公益协作</span>
+              <h3>社区共建支持</h3>
+              <p>项目需要更多打印复现、使用反馈、文档整理和公益资源一起补齐。</p>
+              <ul>
+                <li>开源治理：庄表伟</li>
+                <li>社区实践：李大维</li>
+                <li>项目整理：张淼</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="join" class="section join" data-page="cobuild">
+        <div class="section-title">
+          <p class="eyebrow">🤝 参与入口</p>
+          <h2>你可以从这里参与共建</h2>
+        </div>
+        <div class="join-grid">
+          <article class="join-card">
+            <h3>🧡 病友 / 家属</h3>
+            <p>提交手部使用困难、希望改善的动作、手型信息和测试意向。</p>
+            <div class="placeholder">需求收集入口即将开放</div>
+          </article>
+          <article class="join-card">
+            <h3>🖨️ 3D 打印志愿者</h3>
+            <p>帮助复现当前版本，反馈打印问题，支持病友家庭制作。</p>
+            <div class="placeholder">打印共建入口即将开放</div>
+          </article>
+          <article class="join-card">
+            <h3>🛠️ 开发者 / 研究者</h3>
+            <p>参与结构、材料、康复、人机工程、文档和开源流程优化。</p>
+            <a class="text-link" href="https://github.com/Amasun93/open-hand-aid" target="_blank" rel="noreferrer">GitHub：open-hand-aid</a>
+          </article>
+          <article class="join-card">
+            <h3>🤝 公益组织 / 企业</h3>
+            <p>支持材料、打印、物流、测试组织和病友家庭定向制作。</p>
+            <div class="placeholder">公益支持入口即将开放</div>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p>OpenHandAid | 开源手展辅助手套</p>
+      <p>一个面向真实需求的开源 3D 打印手部辅具项目。</p>
+    </footer>
+    <script>
+      (() => {
+        if ("scrollRestoration" in history) {
+          history.scrollRestoration = "manual";
+        }
+
+        const aliases = {
+          project: ["project", "top", "what", "current", "demo", "pain"],
+          fit: ["fit"],
+          reproduce: ["reproduce", "materials"],
+          cobuild: ["join-status", "roadmap", "build", "progress", "join", "need"],
+        };
+        const pages = Object.keys(aliases);
+        const allSections = [...document.querySelectorAll("[data-page]")];
+        const allTabs = [...document.querySelectorAll("[data-tab]")];
+
+        function pageFromHash() {
+          const id = decodeURIComponent(location.hash.replace("#", "")) || "project";
+          return pages.find((page) => aliases[page].includes(id)) || "project";
+        }
+
+        function setActivePage(page) {
+          document.body.dataset.activePage = page;
+          allSections.forEach((section) => {
+            section.hidden = section.dataset.page !== page;
+          });
+          allTabs.forEach((tab) => {
+            const isActive = tab.dataset.tab === page;
+            tab.classList.toggle("is-active", isActive);
+            tab.setAttribute("aria-current", isActive ? "page" : "false");
+          });
+        }
+
+        function showFromHash() {
+          const page = pageFromHash();
+          setActivePage(page);
+          const id = decodeURIComponent(location.hash.replace("#", ""));
+          const target = id && document.getElementById(id);
+          const firstSection = document.querySelector(`[data-page="${page}"]`);
+          const scrollTarget = target && target.dataset.page === page ? target : firstSection;
+          requestAnimationFrame(() => {
+            requestAnimationFrame(() => {
+              const headerHeight = document.querySelector(".topbar")?.offsetHeight || 0;
+              const top = scrollTarget
+                ? scrollTarget.getBoundingClientRect().top + window.scrollY - headerHeight - 12
+                : 0;
+              window.scrollTo({ top: Math.max(0, top), behavior: "auto" });
+            });
+          });
+        }
+
+        showFromHash();
+        window.addEventListener("hashchange", showFromHash);
+      })();
+    </script>
+  </body>
+</html>

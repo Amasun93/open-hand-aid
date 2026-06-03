@@ -55,9 +55,10 @@ OpenHandAid 是一个开源 3D 打印手部辅具项目。它从病友真实生�
 ## 🔗 快速入口
 
 - 模型主下载入口：[MakerWorld 模型页](https://makerworld.com.cn/zh/models/2005480-kai-yuan-shou-zhan-fu-zhu-shou-tao?appSharePlatform=wx#profileId-2234460)
+- 项目展示页：[OpenHandAid 项目页](https://amasun93.github.io/open-hand-aid/)
 - 当前公开版本：`OpenHandAid-v1`
 - 发起方：Khub 罕见病开源社区
-- 第一代火种开发者：斯坦星球 ideaLab: 大卫老师团队
+- 第一代火种开发者：孙大卫老师团队
 
 如果你只是想下载并打印当前公开版本，建议优先从 MakerWorld 获取。GitHub 仓库主要用于保存说明文档、BOM、反馈模板和后续共建记录。
 
@@ -177,4 +178,4 @@ OpenHandAid 是一个开源 3D 打印手部辅具项目。它从病友真实生�
 ## 🙏 致谢
 
 - Khub 罕见病开源社区：项目发起与病友需求连接。
-- 斯坦星球 ideaLab: 大卫老师团队：第一代火种开发者。
+- 孙大卫老师团队：第一代火种开发者。
