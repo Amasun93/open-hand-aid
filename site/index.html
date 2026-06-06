@@ -8,7 +8,7 @@
       name="description"
       content="OpenHandAid 是一个由 Khub 罕见病开源社区发起的开源 3D 打印手部辅具项目。"
     />
-    <link rel="stylesheet" href="./styles.css?v=bom-copy-1" />
+    <link rel="stylesheet" href="./styles.css?v=patient-flow-4" />
   </head>
   <body data-active-page="project">
     <header class="topbar" aria-label="页面导航">
@@ -17,10 +17,10 @@
         <span>OpenHandAid</span>
       </a>
       <nav class="page-tabs" aria-label="页面标签">
-        <a href="#project" data-tab="project">🔎 项目</a>
-        <a href="#fit" data-tab="fit">👥 适用</a>
-        <a href="#reproduce" data-tab="reproduce">🧰 复现</a>
-        <a href="#join-status" data-tab="cobuild">🌿 共建</a>
+        <a href="#project" data-tab="project">🔎 能帮我吗</a>
+        <a href="#fit" data-tab="fit">👥 我适合吗</a>
+        <a href="#reproduce" data-tab="reproduce">🧰 怎么试做</a>
+        <a href="#join-status" data-tab="cobuild">🌿 我来参与</a>
       </nav>
     </header>
 
@@ -28,34 +28,39 @@
       <section id="project" class="hero section" data-page="project">
         <div class="hero-copy">
           <p class="eyebrow">🔓 Khub 开源项目 001</p>
-          <h1>让受限的手，<br />多一点可控感</h1>
+          <h1>手张不开，<br />也想自己多做一点</h1>
           <p class="lead">
-            OpenHandAid 是一个由病友真实需求出发的开源 3D 打印手部辅具项目。我们正在用低成本材料、可复现结构和开放协作，改进手部伸展与基础抓握辅助工具。
+            如果夹菜、拿杯、回消息这些小事越来越费劲，先别急着放弃。OpenHandAid 是一套可以打印、可以改、可以一起试的手部辅助方案，想帮手指多撑开一点，让日常动作多一点机会。
           </p>
+          <div class="hero-actions" aria-label="患者优先行动">
+            <a class="action-button primary-action" href="#fit">👥 我能不能试？</a>
+            <a class="action-button" href="#demo">🎥 先看佩戴效果</a>
+            <button class="action-button voice-button" type="button" id="listen-summary">🔊 听我讲一遍</button>
+          </div>
           <div class="project-status" aria-label="项目当前状态">
-            <span><strong>当前版本</strong> 可演示原型</span>
-            <span><strong>模型</strong> MakerWorld 已开放</span>
-            <span><strong>物料</strong> 初版可看</span>
-            <span><strong>打印参数</strong> 待完善</span>
-            <span><strong>组装教程</strong> 待完善</span>
-            <span><strong>医学属性</strong> 非医疗器械</span>
+            <span><strong>现在能看</strong> 佩戴演示</span>
+            <span><strong>现在能做</strong> 下载模型</span>
+            <span><strong>现在能改</strong> 开源共建</span>
+            <span><strong>需要继续补</strong> 更多试戴反馈</span>
+            <span><strong>适合先试</strong> 轻量日常动作</span>
+            <span><strong>重要提醒</strong> 非医疗器械</span>
           </div>
           <div class="hero-routes" aria-label="首屏行动入口">
             <a class="route-card main-route" href="#what">
-              <span>🔎 了解项目</span>
-              <strong>先看清楚它是什么、适合谁、现在做到哪一步。</strong>
+              <span>🔎 它能帮我什么？</span>
+              <strong>先看它解决的是哪一种手部动作困难。</strong>
             </a>
             <a class="route-card" href="#fit">
-              <span>👥 适用人群</span>
-              <strong>先确认适用人群、动作场景和当前边界。</strong>
+              <span>👥 我这种情况能试吗？</span>
+              <strong>看适用场景、试戴条件和停止提醒。</strong>
             </a>
             <a class="route-card" href="#reproduce">
-              <span>🧰 查看复现</span>
-              <strong>下载模型、准备物料，先把复现第一步走通。</strong>
+              <span>🧰 想做一套怎么办？</span>
+              <strong>模型、小件、试戴检查都从这里看。</strong>
             </a>
             <a class="route-card" href="#join-status">
-              <span>🌿 参与共建</span>
-              <strong>打印、开发、研究和公益支持，都能找到入口。</strong>
+              <span>🌿 我能怎么参与？</span>
+              <strong>反馈、打印、改进和公益支持都有入口。</strong>
             </a>
           </div>
           <p class="notice">
@@ -72,32 +77,32 @@
 
       <section id="what" class="section intro" data-page="project">
         <div class="section-title">
-          <p class="eyebrow">🧭 这是什么</p>
-          <h2>一个开源的 3D 打印手部辅具项目</h2>
+          <p class="eyebrow">🧭 先问清楚</p>
+          <h2>别先看参数，先看它能不能帮上忙</h2>
         </div>
         <div class="intro-grid">
           <article>
-            <h3>🧩 真实需求</h3>
+            <h3>❓ 它到底是什么？</h3>
             <ul class="key-points">
-              <li>面向 FSHD、CMT、MG、ALS 等相关病友</li>
-              <li>关注吃饭、拿水杯、打字、回微信等日常动作</li>
-              <li>从真实生活困难出发，不先从技术出发</li>
+              <li>一套正在开源共建的 3D 打印手部辅具。</li>
+              <li>它不是治疗工具，而是帮助把手指撑开一点、抓握稳定一点。</li>
+              <li>当前更像可测试原型，不是成熟医疗产品。</li>
             </ul>
           </article>
           <article>
-            <h3>🧤 当前方案</h3>
+            <h3>🧤 戴上后想做什么？</h3>
             <ul class="key-points">
-              <li>3D 打印骨架提供基础支撑</li>
-              <li>柔性固定结构、魔术贴和弹力带辅助调节</li>
-              <li>支持部分伸展、轻量抓握、夹取和撑开动作</li>
+              <li>先打印骨架和指部固定件，再用魔术贴、螺丝和橡胶圈组装。</li>
+              <li>佩戴后通过外部结构和弹力辅助，让手指更容易留出动作空间。</li>
+              <li>第一次尝试最好有家属、志愿者或康复相关伙伴协助。</li>
             </ul>
           </article>
           <article>
-            <h3>🌱 开源共建</h3>
+            <h3>👥 我该从哪一步开始？</h3>
             <ul class="key-points">
-              <li>不同手型、病种和打印条件需要持续适配</li>
-              <li>病友反馈推动真实问题进入迭代</li>
-              <li>打印志愿者、开发者和公益伙伴共同改进</li>
+              <li>手指自然张开困难，想测试拿杯、拿筷子、打字等轻量动作的人。</li>
+              <li>能描述自己卡在哪里，并愿意反馈佩戴体验的人。</li>
+              <li>能帮助打印、改结构、做材料测试或整理文档的共建者。</li>
             </ul>
           </article>
         </div>
@@ -105,8 +110,8 @@
 
       <section id="fit" class="section fit" data-page="fit">
         <div class="section-title">
-          <p class="eyebrow">👥 适用人群</p>
-          <h2>哪些人群可以关注，哪些动作值得测试</h2>
+          <p class="eyebrow">👥 我适合吗？</p>
+          <h2>先拿一个具体动作来判断</h2>
         </div>
         <figure class="concept-figure">
           <img src="./assets/concept-fit-scenes.png" alt="佩戴手部辅具后进行拿杯、用筷子、打字和使用手机等日常动作的概念示意图" />
@@ -114,7 +119,7 @@
         </figure>
         <div class="split">
           <div class="copy-block">
-            <h3>✅ 可能适合关注的人群</h3>
+            <h3>✅ 可以先来了解的人</h3>
             <div class="condition-tags" aria-label="相关病症或状态示例">
               <span>FSHD 面肩肱型肌营养不良</span>
               <span>CMT 腓骨肌萎缩症</span>
@@ -131,7 +136,7 @@
             </ul>
           </div>
           <div class="copy-block use-scenes">
-            <h3>🎯 重点改善的动作场景</h3>
+            <h3>🎯 先别想太大，先试这些小动作</h3>
             <ul>
               <li>手掌撑开、手指伸展。</li>
               <li>拿杯、拿碗、拿筷子等轻量抓握。</li>
@@ -140,12 +145,43 @@
             </ul>
           </div>
         </div>
+        <div class="patient-steps" aria-label="患者尝试前的三步判断">
+          <article>
+            <span>第一步</span>
+            <h3>先说清楚卡在哪里</h3>
+            <p>比如拿杯、拿筷子、打字、撑开手掌。不要一开始就期待它解决所有手部问题。</p>
+          </article>
+          <article>
+            <span>第二步</span>
+            <h3>先试一小会儿</h3>
+            <p>观察有没有压痛、勒痕、滑动、麻木或明显不适，记录是哪一个位置不舒服。</p>
+          </article>
+          <article>
+            <span>第三步</span>
+            <h3>把真实感觉说回来</h3>
+            <p>你的真实反馈会决定下一轮改结构、改材料、改尺寸，还是改佩戴流程。</p>
+          </article>
+        </div>
+        <div class="patient-faq" aria-label="患者常见问题">
+          <details open>
+            <summary>它能恢复肌肉功能吗？</summary>
+            <p>不能。它只是尝试通过外部结构和弹力辅助，让某些轻量动作更容易尝试，不替代治疗和康复方案。</p>
+          </details>
+          <details>
+            <summary>我可以直接自己打印使用吗？</summary>
+            <p>可以先了解模型和材料，但第一次佩戴不建议独自尝试。最好有人帮你观察松紧、压痛、皮肤状态和动作是否稳定。</p>
+          </details>
+          <details>
+            <summary>什么情况要停止使用？</summary>
+            <p>出现疼痛、麻木、明显勒痕、皮肤破损、关节被强行牵拉，或者医生明确不建议佩戴外部辅具时，应停止使用。</p>
+          </details>
+        </div>
       </section>
 
       <section id="current" class="section current" data-page="project">
         <div class="section-title">
-          <p class="eyebrow">🧪 这一代做到什么</p>
-          <h2>当前版本已经能演示哪些能力</h2>
+          <p class="eyebrow">🧪 现在做到哪了</p>
+          <h2>先别想最终版，它已经能被拿来试了</h2>
         </div>
         <div class="feature-row">
           <div class="feature-copy">
@@ -187,7 +223,7 @@
       <section id="demo" class="section demo" data-page="project">
         <div class="section-title">
           <p class="eyebrow">🎥 真实演示</p>
-          <h2>从一个生活动作，看见继续迭代的价值</h2>
+          <h2>先看一个小动作：戴上后能不能夹起来</h2>
         </div>
         <div class="video-panel">
           <div class="video-frame">
@@ -230,10 +266,42 @@
         </div>
       </section>
 
+      <section id="compare" class="section compare" data-page="project">
+        <div class="section-title">
+          <p class="eyebrow">🧤 佩戴前后对比</p>
+          <h2>同一只手，戴上前后差在哪里？</h2>
+          <p class="section-lead">下面是两组真实试戴对比。重点不是承诺“治好”，而是看手指有没有多一点撑开的空间、动作有没有多一点机会。</p>
+        </div>
+        <div class="compare-layout">
+          <figure class="compare-card">
+            <img src="./assets/before-after-myasthenia-gravis.png" alt="重症肌无力病友佩戴 OpenHandAid 前后的手部状态对比" />
+            <figcaption>
+              <strong>重症肌无力病友测试</strong>
+              <span>佩戴前手指张开受限；佩戴后可以看到手指被外部结构支撑，留下更大的抓握尝试空间。</span>
+            </figcaption>
+          </figure>
+          <figure class="compare-card">
+            <img src="./assets/before-after-fshd.png" alt="FSHD 病友佩戴 OpenHandAid 前后的手部状态对比" />
+            <figcaption>
+              <strong>FSHD 病友测试</strong>
+              <span>佩戴前手掌和手指姿态受限；佩戴后有了更稳定的撑开位置，舒适度和尺寸仍需要继续反馈。</span>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="compare-note">
+          <span>看图时先别急着下结论</span>
+          <ul>
+            <li>它帮助的是哪一个具体动作，而不是笼统地“治好了手”。</li>
+            <li>佩戴后有没有压痛、勒痕、滑动或关节被强行牵拉。</li>
+            <li>这组反馈能不能转化成下一轮结构、尺寸或材料改进。</li>
+          </ul>
+        </div>
+      </section>
+
       <section id="pain" class="section pain" data-page="project">
         <div class="section-title">
-          <p class="eyebrow">🧯 下一步要改进什么</p>
-          <h2>把当前难点讲清楚，下一轮迭代才有方向</h2>
+          <p class="eyebrow">🧯 还差哪里</p>
+          <h2>现在最需要大家一起挑毛病</h2>
         </div>
         <figure class="concept-figure">
           <img src="./assets/concept-iteration-gaps.png" alt="佩戴步骤、尺寸测量、舒适度和复现资料等迭代问题的概念示意图" />
@@ -292,12 +360,36 @@
           <article><h3>📘 制作复现</h3><p>完善物料清单、打印参数、组装教程和常见问题。</p></article>
           <article><h3>⚙️ 高阶探索</h3><p>线控、电控、肌电等方向，但不能明显增加使用负担。</p></article>
         </div>
+        <div class="tech-backlog" aria-label="开发者待解决问题">
+          <div class="subsection-title">
+            <span>开发者优先看</span>
+            <h3>现在最值得一起解决的技术难点</h3>
+          </div>
+          <div class="backlog-grid">
+            <article>
+              <strong>尺寸参数化</strong>
+              <p>把手背宽度、指长、关节位置转成更容易调整的模型参数。</p>
+            </article>
+            <article>
+              <strong>佩戴独立性</strong>
+              <p>减少绑带步骤，让单手能力受限的使用者更少依赖他人协助。</p>
+            </article>
+            <article>
+              <strong>材料替代验证</strong>
+              <p>记录 PETG、TPU、包覆层、弹力件在舒适度和耐用性上的差异。</p>
+            </article>
+            <article>
+              <strong>复现文档</strong>
+              <p>补齐打印摆放、支撑、组装步骤、试戴检查和常见问题。</p>
+            </article>
+          </div>
+        </div>
       </section>
 
       <section id="reproduce" class="section reproduce" data-page="reproduce">
         <div class="section-title">
-          <p class="eyebrow">🧰 复现入口</p>
-          <h2>想复现当前版本，先看这几件事</h2>
+          <p class="eyebrow">🧰 怎么用？</p>
+          <h2>想试做一套，先看这几件事</h2>
         </div>
         <div class="resource-grid">
           <article class="resource-card is-open">
@@ -314,9 +406,9 @@
           </article>
           <article class="resource-card is-open">
             <span>小件清单</span>
-            <h3>准备螺丝和绑带</h3>
+            <h3>要准备哪些小件</h3>
             <p>先把螺丝、魔术贴、橡胶圈和工具规格对齐，能减少复现时反复试错。</p>
-            <a class="text-link" href="#materials">查看物料清单</a>
+            <a class="text-link" href="#materials">看要准备什么</a>
           </article>
           <article class="resource-card is-missing">
             <span>待完善</span>
@@ -342,7 +434,7 @@
       <section id="materials" class="section bom" data-page="reproduce">
         <div class="section-title">
           <p class="eyebrow">📦 基础物料</p>
-          <h2>买对小件，复现就少卡一步</h2>
+          <h2>先买对小件，后面少卡一步</h2>
           <p class="section-lead">下面列出当前原型需要准备的小件、用途和入口。数量先按一套可演示原型估算，后续会随组装教程继续校准。</p>
         </div>
 
@@ -485,16 +577,77 @@
         <ol class="timeline">
           <li><time>2025-05</time><span>项目启动，收集病友真实需求。</span></li>
           <li><time>2025</time><span>斯坦星球 ideaLab 启动火种版本，完成多轮原型验证。</span></li>
-          <li><time>2026-01</time><span>模型在 MakerWorld 开源发布，Khub 发布项目介绍推文。</span></li>
+          <li><time>2026-01</time><span>模型公开发布，项目故事同步对外介绍。</span></li>
           <li><time>2026-05-14</time><span>第二次交接会议，南京医科大学团队接力下一轮迭代。</span></li>
           <li><time>下一阶段</time><span>持续补充版本说明、测试反馈、组装教程和迭代方向。</span></li>
         </ol>
       </section>
 
+      <section id="sources" class="section source-kit" data-page="cobuild">
+        <div class="section-title">
+          <p class="eyebrow">📣 下一步去哪里</p>
+          <h2>想继续了解、下载或参与，直接从这里走</h2>
+          <p class="section-lead">不用翻聊天记录，也不用先懂技术。想看故事、下载模型、提交反馈或一起改进，都有对应入口。</p>
+        </div>
+        <div class="source-grid" aria-label="公开资料入口">
+          <article class="source-card feature-source">
+            <div>
+              <span>先了解</span>
+              <h3>从这个故事开始</h3>
+              <p>想知道这个手辅为什么会出现、它最初想回应什么需求，可以先看完整项目故事。</p>
+            </div>
+            <a class="text-link" href="https://mp.weixin.qq.com/s/dx6Q4wn3-JW0ilBO8dEmOA" target="_blank" rel="noreferrer">看项目故事</a>
+          </article>
+          <article class="source-card qr-card">
+            <span>看后续</span>
+            <h3>关注后面的测试和迭代</h3>
+            <img src="https://open.weixin.qq.com/qr/code?username=gh_a61b645d554c" alt="Khub 公众号二维码" />
+            <p>后续版本、测试招募和共建消息会继续更新。</p>
+          </article>
+          <article class="source-card">
+            <span>想试做</span>
+            <h3>先下载模型</h3>
+            <p>会 3D 打印的伙伴，可以先从模型页开始复现，再把遇到的问题反馈回来。</p>
+            <a class="text-link" href="https://makerworld.com.cn/zh/models/2005480-kai-yuan-shou-zhan-fu-zhu-shou-tao?appSharePlatform=wx#profileId-2234460" target="_blank" rel="noreferrer">下载模型</a>
+          </article>
+          <article class="source-card">
+            <span>想一起改</span>
+            <h3>去看开源仓库</h3>
+            <p>结构、材料、尺寸、文档、测试反馈都可以继续往仓库里沉淀。</p>
+            <a class="text-link" href="https://github.com/Amasun93/open-hand-aid" target="_blank" rel="noreferrer">参与改进</a>
+          </article>
+        </div>
+        <div class="request-panel" aria-label="参与方式提示">
+          <div class="request-copy">
+            <span>不用等到很专业</span>
+            <h3>你给出的一个小反馈，也可能变成下一版改动</h3>
+            <p>这个项目最需要的不是一句“很好”，而是更具体的真实情况：哪个动作卡住、哪里勒、哪里滑、哪一步装不上。</p>
+          </div>
+          <div class="request-grid">
+            <article>
+              <strong>病友 / 家属</strong>
+              <p>说清楚想完成哪个动作，以及现在卡在什么地方。</p>
+            </article>
+            <article>
+              <strong>打印志愿者</strong>
+              <p>把模型打印出来，记录支撑、材料、螺丝和组装问题。</p>
+            </article>
+            <article>
+              <strong>开发者 / 研究者</strong>
+              <p>帮忙改尺寸参数、材料方案、佩戴流程和复现文档。</p>
+            </article>
+            <article>
+              <strong>公益伙伴</strong>
+              <p>支持打印、材料、测试组织和病友家庭对接。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
       <section id="need" class="section feedback" data-page="cobuild">
         <div class="section-title">
           <p class="eyebrow">💬 真实反馈</p>
-          <h2>让需求和改进建议进入下一轮迭代</h2>
+          <h2>别人试完，哪些地方真的变了？</h2>
         </div>
         <div class="feedback-grid">
           <figure>
@@ -510,14 +663,14 @@
 
       <section id="join-status" class="section handoff" data-page="cobuild">
         <div class="section-title">
-          <p class="eyebrow">🧭 当前接力</p>
-          <h2>当前项目进展与接力团队</h2>
+          <p class="eyebrow">🧭 谁在接力</p>
+          <h2>这不是一个人做完的项目</h2>
         </div>
         <div class="cobuild-strip" aria-label="参与方式概览">
-          <a href="#join"><strong>病友反馈</strong><span>提交动作困难和测试意向</span></a>
-          <a href="#join"><strong>打印复现</strong><span>复现模型并反馈打印问题</span></a>
-          <a href="#roadmap"><strong>开发迭代</strong><span>参与结构、材料和文档优化</span></a>
-          <a href="#join"><strong>公益支持</strong><span>支持材料、打印和对接资源</span></a>
+          <a href="#join"><strong>我想反馈</strong><span>提交动作困难和测试意向</span></a>
+          <a href="#join"><strong>我会打印</strong><span>复现模型并反馈打印问题</span></a>
+          <a href="#roadmap"><strong>我能改进</strong><span>参与结构、材料和文档优化</span></a>
+          <a href="#join"><strong>我能支持</strong><span>支持材料、打印和对接资源</span></a>
         </div>
         <div class="handoff-layout">
           <ol class="handoff-steps" aria-label="项目接力进度">
@@ -576,19 +729,20 @@
 
       <section id="join" class="section join" data-page="cobuild">
         <div class="section-title">
-          <p class="eyebrow">🤝 参与入口</p>
-          <h2>你可以从这里参与共建</h2>
+          <p class="eyebrow">🤝 我也想参与！</p>
+          <h2>别只围观，选一个你能做的入口</h2>
+          <p class="section-lead">这里暂时不放临时个人二维码，避免大家跑错入口。等 Khub 确认统一表单、小助手和分流规则后，会在这里放正式入口。</p>
         </div>
         <div class="join-grid">
           <article class="join-card">
             <h3>🧡 病友 / 家属</h3>
             <p>提交手部使用困难、希望改善的动作、手型信息和测试意向。</p>
-            <div class="placeholder">需求收集入口即将开放</div>
+            <div class="placeholder">统一反馈入口整理中</div>
           </article>
           <article class="join-card">
             <h3>🖨️ 3D 打印志愿者</h3>
             <p>帮助复现当前版本，反馈打印问题，支持病友家庭制作。</p>
-            <div class="placeholder">打印共建入口即将开放</div>
+            <div class="placeholder">打印志愿者入口整理中</div>
           </article>
           <article class="join-card">
             <h3>🛠️ 开发者 / 研究者</h3>
@@ -598,7 +752,7 @@
           <article class="join-card">
             <h3>🤝 公益组织 / 企业</h3>
             <p>支持材料、打印、物流、测试组织和病友家庭定向制作。</p>
-            <div class="placeholder">公益支持入口即将开放</div>
+            <div class="placeholder">公益支持入口整理中</div>
           </article>
         </div>
       </section>
@@ -608,7 +762,17 @@
     <footer class="footer">
       <p>OpenHandAid | 开源手展辅助手套</p>
       <p>一个面向真实需求的开源 3D 打印手部辅具项目。</p>
+      <p class="footer-links">
+        公开入口：
+        <a href="https://mp.weixin.qq.com/s/dx6Q4wn3-JW0ilBO8dEmOA" target="_blank" rel="noreferrer">项目故事</a>
+        <a href="https://makerworld.com.cn/zh/models/2005480-kai-yuan-shou-zhan-fu-zhu-shou-tao?appSharePlatform=wx#profileId-2234460" target="_blank" rel="noreferrer">MakerWorld</a>
+        <a href="https://github.com/Amasun93/open-hand-aid" target="_blank" rel="noreferrer">GitHub</a>
+      </p>
     </footer>
+    <div class="floating-actions" aria-label="快速反馈入口">
+      <a href="#join">我想反馈</a>
+      <a href="#reproduce">我想试做</a>
+    </div>
     <script>
       (() => {
         if ("scrollRestoration" in history) {
@@ -619,7 +783,7 @@
           project: ["project", "top", "what", "current", "demo", "pain"],
           fit: ["fit"],
           reproduce: ["reproduce", "materials"],
-          cobuild: ["join-status", "roadmap", "build", "progress", "join", "need"],
+          cobuild: ["join-status", "roadmap", "build", "progress", "sources", "join", "need"],
         };
         const pages = Object.keys(aliases);
         const allSections = [...document.querySelectorAll("[data-page]")];
@@ -662,6 +826,21 @@
 
         showFromHash();
         window.addEventListener("hashchange", showFromHash);
+
+        const listenButton = document.getElementById("listen-summary");
+        const summaryText = "OpenHandAid 是一个由 Khub 发起的开源手部辅具项目。它不能恢复肌肉功能，也不是医疗器械。它尝试用三维打印结构、魔术贴和弹力辅助，帮助部分手指张开困难的人测试拿杯、拿筷子、打字等轻量动作。第一次尝试最好有人协助，并记录疼痛、勒痕、滑动和尺寸不合等反馈。";
+
+        if (listenButton && "speechSynthesis" in window) {
+          listenButton.addEventListener("click", () => {
+            window.speechSynthesis.cancel();
+            const utterance = new SpeechSynthesisUtterance(summaryText);
+            utterance.lang = "zh-CN";
+            utterance.rate = 0.92;
+            window.speechSynthesis.speak(utterance);
+          });
+        } else if (listenButton) {
+          listenButton.hidden = true;
+        }
       })();
     </script>
   </body>
