@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title">
+  <title id="title">Form placeholder icon</title>
+  <rect width="120" height="120" rx="14" fill="#fff3d2"/>
+  <rect x="30" y="18" width="60" height="84" rx="8" fill="#fffdf8" stroke="#15342f" stroke-width="6"/>
+  <path d="M44 42h32M44 58h32M44 74h20" stroke="#18a88f" stroke-width="6" stroke-linecap="round"/>
+  <path d="M76 78l8 8 14-18" fill="none" stroke="#a65732" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

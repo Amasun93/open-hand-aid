@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title">
+  <title id="title">Project helper placeholder icon</title>
+  <rect width="120" height="120" rx="14" fill="#e7f3ed"/>
+  <circle cx="60" cy="42" r="18" fill="#18a88f"/>
+  <path d="M28 94c5-22 22-35 32-35s27 13 32 35" fill="#15342f"/>
+  <path d="M28 25h15M77 25h15M33 20v10M87 20v10" stroke="#f2c64c" stroke-width="6" stroke-linecap="round"/>
+</svg>

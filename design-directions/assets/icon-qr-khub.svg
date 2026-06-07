@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-labelledby="title">
+  <title id="title">Khub QR placeholder icon</title>
+  <rect width="120" height="120" rx="14" fill="#fffdf8"/>
+  <path d="M18 18h28v28H18zM74 18h28v28H74zM18 74h28v28H18z" fill="#15342f"/>
+  <path d="M27 27h10v10H27zM83 27h10v10H83zM27 83h10v10H27z" fill="#f2c64c"/>
+  <path d="M58 22h8v8h-8zM58 38h16v8H58zM54 58h12v12H54zM74 58h8v8h-8zM90 58h12v12H90zM58 82h8v20h-8zM74 74h28v8H74zM82 90h20v12H82z" fill="#18a88f"/>
+</svg>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title">
+  <title id="title">Maker team avatar</title>
+  <rect width="96" height="96" rx="24" fill="#fff3d2"/>
+  <path d="M25 66h46v10H25zM31 28h34v28H31z" fill="#15342f"/>
+  <path d="M36 35h24v14H36z" fill="#f6f1e7"/>
+  <path d="M24 28h48M39 20h18M48 56v10" stroke="#18a88f" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="35" cy="71" r="3" fill="#f2c64c"/>
+  <circle cx="61" cy="71" r="3" fill="#f2c64c"/>
+</svg>

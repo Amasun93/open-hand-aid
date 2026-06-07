@@ -270,6 +270,12 @@ h3 {
   color: var(--soft-ink);
 }
 
+.draft-note {
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 800;
+}
+
 .cobuild-story {
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
@@ -374,6 +380,21 @@ h3 {
   margin-bottom: 0;
 }
 
+.credit-card-head {
+  display: grid;
+  grid-template-columns: 52px minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.role-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(43, 35, 22, 0.08);
+}
+
 .fit-layout,
 .demo-layout,
 .build-layout {
@@ -459,6 +480,78 @@ h3 {
   border-top: 1px solid var(--line);
 }
 
+.asset-section {
+  border-top: 1px solid var(--line);
+}
+
+.asset-layout {
+  display: grid;
+  grid-template-columns: minmax(300px, 0.82fr) minmax(0, 1.18fr);
+  gap: clamp(18px, 4vw, 46px);
+  align-items: stretch;
+}
+
+.device-card {
+  margin: 0;
+  overflow: hidden;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.device-card img {
+  width: 100%;
+  padding: 20px;
+  background: #f4f4f2;
+  object-fit: contain;
+}
+
+.device-card figcaption {
+  padding: 18px 20px 20px;
+  color: var(--soft-ink);
+  font-size: 15px;
+}
+
+.asset-gap-list {
+  display: grid;
+  gap: 14px;
+}
+
+.asset-gap-list article {
+  display: grid;
+  grid-template-columns: 64px minmax(0, 1fr);
+  gap: 16px;
+  align-items: start;
+  padding: 22px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+}
+
+.asset-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 18px;
+}
+
+.asset-gap-list span {
+  display: inline-block;
+  margin-bottom: 6px;
+  color: var(--rust);
+  font-weight: 900;
+}
+
+.asset-gap-list p {
+  margin-bottom: 0;
+  color: var(--soft-ink);
+}
+
+.asset-section > .draft-note {
+  max-width: 900px;
+  margin-top: 18px;
+}
+
 .build-layout {
   align-items: start;
   margin-top: 22px;
@@ -535,6 +628,19 @@ h3 {
   font-size: 13px;
   font-weight: 900;
   text-align: center;
+}
+
+.qr-placeholder img {
+  width: 76px;
+  height: 76px;
+}
+
+.qr-placeholder small {
+  max-width: 104px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 900;
+  line-height: 1.25;
 }
 
 .qr-card a,
@@ -685,6 +791,7 @@ h3 {
   .hero,
   .fit-layout,
   .demo-layout,
+  .asset-layout,
   .build-layout {
     grid-template-columns: 1fr;
   }
@@ -780,10 +887,20 @@ h3 {
   .issue-list,
   .relay-timeline article,
   .credit-grid article,
+  .asset-gap-list article,
   .qr-card,
   .message-form,
   .message-list article {
     padding: 18px;
+  }
+
+  .asset-gap-list article {
+    grid-template-columns: 52px minmax(0, 1fr);
+  }
+
+  .asset-icon {
+    width: 52px;
+    height: 52px;
   }
 
   .relay-timeline article {

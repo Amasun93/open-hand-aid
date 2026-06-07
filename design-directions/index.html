@@ -16,6 +16,7 @@
         <a href="#fit">能不能试</a>
         <a href="#demo">真实反馈</a>
         <a href="#team">火种接力</a>
+        <a href="#assets">素材缺口</a>
         <a href="#build">打印复现</a>
         <a href="#message">留言</a>
       </nav>
@@ -113,35 +114,50 @@
           <div class="credits-intro">
             <p class="eyebrow">贡献者名单</p>
             <h3>做过的工作，应该被后面的人看见。</h3>
-            <p>（这里补充团队 logo、公开署名顺序和是否使用全名）</p>
+            <p class="draft-note">（这里补充团队 logo、公开署名顺序和是否使用全名）</p>
           </div>
           <div class="credit-grid">
             <article>
-              <span>Khub 罕见病开源社区</span>
+              <div class="credit-card-head">
+                <img class="role-avatar" src="./assets/avatar-khub.svg" alt="" />
+                <span>Khub 罕见病开源社区</span>
+              </div>
               <p><strong>艾力</strong>：项目发起、病友需求收集、理念方向设计和资源链接。</p>
               <p><strong>兔子</strong>：运营协调、病友测试招募、反馈汇总。</p>
               <p><strong>K仔</strong>：项目推文与传播。</p>
             </article>
             <article>
-              <span>第一代火种开发</span>
+              <div class="credit-card-head">
+                <img class="role-avatar" src="./assets/avatar-maker.svg" alt="" />
+                <span>第一代火种开发</span>
+              </div>
               <p><strong>孙大卫老师团队</strong>：第一代原型探索、制作推进和多轮迭代协调。</p>
               <p><strong>陈嘉琪、蒲新仪</strong>：具体设计、制作与测试。</p>
             </article>
             <article>
-              <span>开源与社区支持</span>
+              <div class="credit-card-head">
+                <img class="role-avatar" src="./assets/avatar-open-source.svg" alt="" />
+                <span>开源与社区支持</span>
+              </div>
               <p><strong>庄表伟</strong>：开源治理指导。</p>
               <p><strong>李大维</strong>：开源实践与社区发展建议。</p>
               <p><strong>张淼</strong>：创业设计与产品策划支持。</p>
             </article>
             <article>
-              <span>测试与佩戴协助</span>
+              <div class="credit-card-head">
+                <img class="role-avatar" src="./assets/avatar-test.svg" alt="" />
+                <span>测试与佩戴协助</span>
+              </div>
               <p><strong>周舟</strong>：协助病友家庭佩戴和测试。</p>
               <p>病友家庭反馈会继续匿名展示，避免暴露姓名、头像和昵称。</p>
             </article>
             <article>
-              <span>下一轮接力团队</span>
+              <div class="credit-card-head">
+                <img class="role-avatar" src="./assets/avatar-next-team.svg" alt="" />
+                <span>下一轮接力团队</span>
+              </div>
               <p><strong>南京医科大学生物医学工程与信息学院周宇轩老师团队</strong>：接力下一轮迭代。</p>
-              <p>（这里补充学生成员公开署名和各自负责方向）</p>
+              <p class="draft-note">（这里补充学生成员公开署名和各自负责方向）</p>
             </article>
           </div>
         </div>
@@ -252,6 +268,52 @@
         </div>
       </section>
 
+      <section id="assets" class="section asset-section" aria-labelledby="assets-title">
+        <div class="section-heading">
+          <p class="eyebrow">素材缺口</p>
+          <h2 id="assets-title">现在最缺的，不是装饰图，是能解释装置怎么工作的真实素材。</h2>
+          <p>
+            页面已经有佩戴反馈、视频和零件总览，但还缺几类会直接影响可信度的图：
+            完整佩戴装置图、弹力路径特写、装配步骤图、尺寸测量图，以及论文里的结构或实验图。
+          </p>
+        </div>
+        <div class="asset-layout">
+          <figure class="device-card">
+            <img src="./assets/device-parts-overview.png" alt="OpenHandAid 当前公开版本的零件总览图" />
+            <figcaption>
+              <strong>已有真实素材：</strong>当前公开模型的零件总览图，可以说明包含手指件、固定件和连接件。
+              但它还不能替代“戴在手上以后完整装置如何工作”的说明图。
+            </figcaption>
+          </figure>
+          <div class="asset-gap-list">
+            <article>
+              <img class="asset-icon" src="./assets/icon-real-device.svg" alt="" />
+              <div>
+                <span>完整佩戴装置图</span>
+                <p>需要一张正面或 45 度角实拍，能同时看清手背框架、指部件、魔术贴和弹力件路线。</p>
+              </div>
+            </article>
+            <article>
+              <img class="asset-icon" src="./assets/icon-real-device.svg" alt="" />
+              <div>
+                <span>结构特写和装配步骤</span>
+                <p>建议补 4-6 张：手背固定、指部安装、橡胶圈 / 弹力件路径、魔术贴穿法、试戴检查。</p>
+              </div>
+            </article>
+            <article>
+              <img class="asset-icon" src="./assets/icon-paper-figure.svg" alt="" />
+              <div>
+                <span>论文里的图</span>
+                <p>如果论文是团队自有或允许引用，优先看结构示意图、实验装置图、佩戴流程图和测试结果图。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <p class="draft-note">
+          （我在本地项目里还没有找到论文 PDF / DOC 文件。你把论文发来后，我可以继续判断哪些图能直接用、哪些只能重画成示意图。）
+        </p>
+      </section>
+
       <section id="build" class="section build-section" aria-labelledby="build-title">
         <div class="section-heading">
           <p class="eyebrow">参与共建</p>
@@ -311,19 +373,28 @@
         </div>
         <div class="contact-grid">
           <article class="qr-card">
-            <div class="qr-placeholder">（这里放 Khub 公众号二维码）</div>
+            <div class="qr-placeholder">
+              <img src="./assets/icon-qr-khub.svg" alt="" />
+              <small>（这里放 Khub 公众号二维码）</small>
+            </div>
             <span>Khub 公众号</span>
             <p>关注项目更新、推文和后续招募信息。</p>
             <a href="https://mp.weixin.qq.com/s/dx6Q4wn3-JW0ilBO8dEmOA">阅读项目推文</a>
           </article>
           <article class="qr-card">
-            <div class="qr-placeholder">（这里放项目小助手二维码）</div>
+            <div class="qr-placeholder">
+              <img src="./assets/icon-qr-helper.svg" alt="" />
+              <small>（这里放项目小助手二维码）</small>
+            </div>
             <span>项目小助手</span>
             <p>适合病友、家属、志愿者先咨询，后续可以按身份分流。</p>
             <button type="button" disabled>（这里放小助手入口）</button>
           </article>
           <article class="qr-card">
-            <div class="qr-placeholder">（这里放需求 / 共建问卷）</div>
+            <div class="qr-placeholder">
+              <img src="./assets/icon-qr-form.svg" alt="" />
+              <small>（这里放需求 / 共建问卷）</small>
+            </div>
             <span>需求 / 共建问卷</span>
             <p>把身份、使用场景、打印能力和参与意向结构化收集起来。</p>
             <button type="button" disabled>（这里放问卷链接）</button>

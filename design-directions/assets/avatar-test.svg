@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title">
+  <title id="title">Testing support avatar</title>
+  <rect width="96" height="96" rx="24" fill="#f6f1e7"/>
+  <path d="M31 30c0-7 6-13 13-13h8c7 0 13 6 13 13v10H31z" fill="#18a88f"/>
+  <path d="M25 40h46v35H25z" fill="#15342f"/>
+  <path d="M35 52h26M35 63h18" stroke="#fffdf8" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="67" cy="68" r="7" fill="#f2c64c"/>
+</svg>

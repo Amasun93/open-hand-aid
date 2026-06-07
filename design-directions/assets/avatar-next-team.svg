@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" role="img" aria-labelledby="title">
+  <title id="title">Next team avatar</title>
+  <rect width="96" height="96" rx="24" fill="#e7f3ed"/>
+  <path d="M22 63c7-13 16-20 26-20s19 7 26 20" fill="none" stroke="#15342f" stroke-width="8" stroke-linecap="round"/>
+  <path d="M28 34h40M36 25h24M42 25v18M54 25v18" stroke="#18a88f" stroke-width="6" stroke-linecap="round"/>
+  <path d="M66 55l9 9-9 9" fill="none" stroke="#a65732" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
