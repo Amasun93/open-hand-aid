@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>OpenHandAid 页面原型</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="OpenHandAid 首页">
+        <img src="./assets/khub-logo.jpg" alt="Khub logo" />
+        <span>OpenHandAid</span>
+      </a>
+      <nav aria-label="页面导航">
+        <a href="#fit">能不能试</a>
+        <a href="#demo">真实反馈</a>
+        <a href="#team">火种接力</a>
+        <a href="#build">打印复现</a>
+        <a href="#message">留言</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <figure class="hero-media">
+          <img src="./assets/feedback-01.webp" alt="佩戴 OpenHandAid 手部辅具操作电脑的场景" />
+        </figure>
+        <div class="hero-copy">
+          <p class="eyebrow">给手指张开困难的人和家属，也给愿意一起改的人</p>
+          <h1 id="hero-title">
+            <span>手张不开</span>
+            <span>想多做一点</span>
+          </h1>
+          <p class="lead">
+            拿杯、夹菜、回消息，有时卡住的不是意愿，而是手指撑不开。
+            OpenHandAid 是一套开源 3D 打印手部辅具原型，想帮你先多完成一个小动作，也把真实反馈带回下一版。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#fit">我能不能试？</a>
+            <a class="button" href="#demo">先看佩戴效果</a>
+          </div>
+          <p class="safety-note">
+            这不是医疗器械，也不替代医生建议。第一次试戴建议有人在旁观察。
+          </p>
+        </div>
+      </section>
+
+      <section id="cobuild-story" class="section cobuild-story" aria-labelledby="cobuild-story-title">
+        <div class="section-heading">
+          <p class="eyebrow">为什么要开源共建</p>
+          <h2 id="cobuild-story-title">真实使用反馈，决定下一版怎么改。</h2>
+          <p>
+            手型、力量、病程和日常动作差异很大，很难靠一个固定版本解决所有问题。
+            OpenHandAid 把模型、材料清单、装配方法和反馈模板公开出来：
+            病友说清楚哪个动作卡住，打印志愿者复现可试戴样件，开发者再根据压痛、滑动、尺寸和佩戴流程的问题改下一版。
+          </p>
+        </div>
+        <div class="cobuild-chain" aria-label="OpenHandAid 共建链路">
+          <article>
+            <span>病友反馈</span>
+            <h3>先把一个动作说清楚</h3>
+            <p>记录想改善的动作、哪里疼、哪里滑、哪里不好戴。越具体，越能帮助判断该改哪里。</p>
+          </article>
+          <article>
+            <span>打印复现</span>
+            <h3>把模型变成能试戴的实物</h3>
+            <p>记录材料、打印参数、尺寸偏差和装配问题，让别人也能少走弯路。</p>
+          </article>
+          <article>
+            <span>开发改进</span>
+            <h3>让下一版更舒服、更好戴</h3>
+            <p>结构、材料、测量规则、文档和安全提醒，都可以被持续改进。</p>
+          </article>
+        </div>
+        <p class="loop-note">它不是一次性发布的产品，而是一条持续回流的开源辅具迭代线。</p>
+      </section>
+
+      <section id="team" class="section team-section" aria-labelledby="team-title">
+        <div class="section-heading">
+          <p class="eyebrow">火种接力</p>
+          <h2 id="team-title">这副手套，是一棒一棒做出来的。</h2>
+          <p>
+            最早是病友把“手张不开”的日常困难讲出来，Khub 把需求带进开源社区，
+            ideaLab 和孙大卫老师团队做出第一代可试戴原型。现在，南京医科大学周宇轩老师团队继续接力，
+            让下一版更好戴、更舒服。
+          </p>
+        </div>
+        <div class="relay-timeline" aria-label="项目接力时间线">
+          <article>
+            <time datetime="2025-05">2025.05</time>
+            <h3>需求被提出</h3>
+            <p>Khub 开始收集病友真实需求，把“手张不开”拆成能被设计和测试的具体动作。</p>
+          </article>
+          <article>
+            <time datetime="2025">2025</time>
+            <h3>火种版本开始</h3>
+            <p>ideaLab 和孙大卫老师团队完成多轮原型验证，把想法推进到可以试戴、可以修改的版本。</p>
+          </article>
+          <article>
+            <time datetime="2026-01">2026.01</time>
+            <h3>开源发布</h3>
+            <p>模型和项目介绍公开，更多病友家庭、打印志愿者和开发者可以看到、复现和反馈。</p>
+          </article>
+          <article>
+            <time datetime="2026-05-14">2026.05</time>
+            <h3>下一棒接上</h3>
+            <p>南京医科大学周宇轩老师团队接力下一轮迭代，继续看舒适度、佩戴流程和结构适配。</p>
+          </article>
+        </div>
+
+        <div class="credits-panel" aria-label="贡献者名单">
+          <div class="credits-intro">
+            <p class="eyebrow">贡献者名单</p>
+            <h3>做过的工作，应该被后面的人看见。</h3>
+            <p>（这里补充团队 logo、公开署名顺序和是否使用全名）</p>
+          </div>
+          <div class="credit-grid">
+            <article>
+              <span>Khub 罕见病开源社区</span>
+              <p><strong>艾力</strong>：项目发起、病友需求收集、理念方向设计和资源链接。</p>
+              <p><strong>兔子</strong>：运营协调、病友测试招募、反馈汇总。</p>
+              <p><strong>K仔</strong>：项目推文与传播。</p>
+            </article>
+            <article>
+              <span>第一代火种开发</span>
+              <p><strong>孙大卫老师团队</strong>：第一代原型探索、制作推进和多轮迭代协调。</p>
+              <p><strong>陈嘉琪、蒲新仪</strong>：具体设计、制作与测试。</p>
+            </article>
+            <article>
+              <span>开源与社区支持</span>
+              <p><strong>庄表伟</strong>：开源治理指导。</p>
+              <p><strong>李大维</strong>：开源实践与社区发展建议。</p>
+              <p><strong>张淼</strong>：创业设计与产品策划支持。</p>
+            </article>
+            <article>
+              <span>测试与佩戴协助</span>
+              <p><strong>周舟</strong>：协助病友家庭佩戴和测试。</p>
+              <p>病友家庭反馈会继续匿名展示，避免暴露姓名、头像和昵称。</p>
+            </article>
+            <article>
+              <span>下一轮接力团队</span>
+              <p><strong>南京医科大学生物医学工程与信息学院周宇轩老师团队</strong>：接力下一轮迭代。</p>
+              <p>（这里补充学生成员公开署名和各自负责方向）</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="what" class="section question-section" aria-labelledby="what-title">
+        <div class="section-heading">
+          <p class="eyebrow">这是什么？</p>
+          <h2 id="what-title">不是治疗工具，是一套可以继续改的开源辅具原型。</h2>
+        </div>
+        <div class="answer-grid">
+          <article>
+            <h3>它想解决什么</h3>
+            <p>
+              当手指不容易自然张开时，很多日常动作会变得很费劲。
+              这套辅具尝试通过外部支撑和弹力辅助，让手指多留一点活动空间。
+            </p>
+          </article>
+          <article>
+            <h3>它现在能做什么</h3>
+            <p>
+              目前重点看轻量动作：撑开手掌、拿杯、拿筷子、打字、操作手机。
+              它不承诺恢复功能，只帮助使用者多一次尝试机会。
+            </p>
+          </article>
+          <article>
+            <h3>它为什么开源</h3>
+            <p>
+              不同手型、病程和使用习惯差异很大。开源能让打印者、开发者和病友一起把结构、材料、尺寸和佩戴流程继续改下去。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="fit" class="section fit-section" aria-labelledby="fit-title">
+        <div class="section-heading">
+          <p class="eyebrow">我适合吗？</p>
+          <h2 id="fit-title">先从一个具体动作判断，不从参数开始。</h2>
+          <p>
+            你可以先想一个最想改善的小动作。这个动作越具体，越容易判断当前版本是否值得试。
+          </p>
+        </div>
+        <div class="fit-layout">
+          <figure>
+            <img src="./assets/concept-fit-scenes.png" alt="拿杯、打字、使用手机等手部动作场景示意" />
+          </figure>
+          <div class="fit-list">
+            <article>
+              <span>可以先了解</span>
+              <p>手指自然张开困难，抓握不稳，希望尝试拿杯、夹菜、打字等轻量动作的人。</p>
+            </article>
+            <article>
+              <span>更适合先试</span>
+              <p>能说清楚自己卡在哪个动作，并愿意反馈哪里舒服、哪里疼、哪里不好戴的人。</p>
+            </article>
+            <article>
+              <span>先别自己硬试</span>
+              <p>皮肤破损、明显疼痛、关节被强行牵拉，或医生明确不建议佩戴外部辅具时，应停止使用。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="demo" class="section demo-section" aria-labelledby="demo-title">
+        <div class="section-heading">
+          <p class="eyebrow">佩戴效果</p>
+          <h2 id="demo-title">与其解释很久，不如先看戴上后的动作。</h2>
+        </div>
+        <div class="demo-layout">
+          <div class="video-shell">
+            <video controls preload="metadata" poster="./assets/demo-cover.jpg">
+              <source src="./assets/demo-chopsticks.mp4" type="video/mp4" />
+              当前浏览器不支持视频播放。
+            </video>
+          </div>
+          <div class="demo-copy">
+            <h3>先看一个小动作：夹起来</h3>
+            <p>
+              如果一个动作原本总是卡住，可以先从短时间试戴开始观察：
+              手指有没有更容易展开，抓握有没有更稳定，哪里又会不舒服。
+            </p>
+            <a class="text-link" href="#start">看下一步怎么试</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="start" class="section start-section" aria-labelledby="start-title">
+        <div class="section-heading">
+          <p class="eyebrow">怎么开始？</p>
+          <h2 id="start-title">先看演示，再确认风险，然后把真实感觉反馈回来。</h2>
+        </div>
+        <div class="steps">
+          <article>
+            <span>1</span>
+            <h3>说清楚你想改善的动作</h3>
+            <p>比如拿杯、拿筷子、撑开手掌、打字。先不要期待它解决所有手部问题。</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>短时间试戴</h3>
+            <p>观察压痛、勒痕、滑动、麻木和皮肤状态。哪里不舒服，就记录哪里。</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>把真实感觉反馈回来</h3>
+            <p>下一版要改结构、材料、尺寸还是佩戴流程，应该由真实体验来决定。</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="build" class="section build-section" aria-labelledby="build-title">
+        <div class="section-heading">
+          <p class="eyebrow">参与共建</p>
+          <h2 id="build-title">你不一定会建模，也可以帮它变得更好。</h2>
+          <p>
+            不需要每个人都懂建模。这个项目现在需要真实体验、稳定复现和可验证改动。
+          </p>
+        </div>
+        <div class="participation-grid">
+          <article>
+            <img src="./assets/feedback-01.webp" alt="佩戴辅具后的日常操作反馈场景" />
+            <span>病友 / 家属</span>
+            <h3>告诉我们哪里卡住了</h3>
+            <p>描述你最想改善的动作、试戴感受、疼痛或不舒服的位置。</p>
+            <a href="../docs/feedback-template.md">提交一个动作反馈</a>
+          </article>
+          <article>
+            <img src="./assets/current-print-process.jpg" alt="3D 打印准备过程" />
+            <span>打印 / 制作志愿者</span>
+            <h3>帮助把模型复现出来</h3>
+            <p>测试材料、打印参数、装配步骤，把复现过程记录清楚。</p>
+            <a href="https://makerworld.com.cn/zh/models/2005480-kai-yuan-shou-zhan-fu-zhu-shou-tao?appSharePlatform=wx#profileId-2234460">查看模型和材料清单</a>
+          </article>
+          <article>
+            <img src="./assets/current-model-structure.jpg" alt="辅具结构模型" />
+            <span>开发 / 研究伙伴</span>
+            <h3>一起改结构和文档</h3>
+            <p>改进尺寸规则、佩戴流程、舒适度、说明文档和风险提示。</p>
+            <a href="https://github.com/Amasun93/open-hand-aid">去 GitHub 参与改进</a>
+          </article>
+        </div>
+        <div class="build-layout">
+          <div class="issue-list">
+            <h3>当前最需要改的地方</h3>
+            <ul>
+              <li>不同手型的测量和缩放规则。</li>
+              <li>硬质边缘、魔术贴和弹力件带来的压痛。</li>
+              <li>第一次佩戴流程太依赖他人协助。</li>
+              <li>打印参数、材料替代和长期使用反馈。</li>
+            </ul>
+          </div>
+          <div class="build-actions">
+            <a class="button primary" href="https://github.com/Amasun93/open-hand-aid">看 GitHub</a>
+            <a class="button" href="../docs/bom.md">看材料清单</a>
+            <a class="button" href="../docs/feedback-template.md">提交反馈模板</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="message" class="section message-section" aria-labelledby="message-title">
+        <div class="section-heading">
+          <p class="eyebrow">社区入口</p>
+          <h2 id="message-title">先留下你的身份和一个具体问题。</h2>
+          <p>
+            公众号、小助手、问卷和留言板可以一起放在这里，让不同身份的人都能找到下一步。
+          </p>
+        </div>
+        <div class="contact-grid">
+          <article class="qr-card">
+            <div class="qr-placeholder">（这里放 Khub 公众号二维码）</div>
+            <span>Khub 公众号</span>
+            <p>关注项目更新、推文和后续招募信息。</p>
+            <a href="https://mp.weixin.qq.com/s/dx6Q4wn3-JW0ilBO8dEmOA">阅读项目推文</a>
+          </article>
+          <article class="qr-card">
+            <div class="qr-placeholder">（这里放项目小助手二维码）</div>
+            <span>项目小助手</span>
+            <p>适合病友、家属、志愿者先咨询，后续可以按身份分流。</p>
+            <button type="button" disabled>（这里放小助手入口）</button>
+          </article>
+          <article class="qr-card">
+            <div class="qr-placeholder">（这里放需求 / 共建问卷）</div>
+            <span>需求 / 共建问卷</span>
+            <p>把身份、使用场景、打印能力和参与意向结构化收集起来。</p>
+            <button type="button" disabled>（这里放问卷链接）</button>
+          </article>
+        </div>
+
+        <div class="message-board">
+          <form class="message-form" id="message-form">
+            <h3>留言板</h3>
+            <p>（这里接问卷、飞书表单、GitHub Issue 或轻量留言后端）</p>
+            <fieldset>
+              <legend>你的身份</legend>
+              <label><input type="radio" name="role" value="病友 / 家属" checked /> 病友 / 家属</label>
+              <label><input type="radio" name="role" value="3D 打印志愿者" /> 3D 打印志愿者</label>
+              <label><input type="radio" name="role" value="开发 / 研究伙伴" /> 开发 / 研究伙伴</label>
+              <label><input type="radio" name="role" value="公益 / 传播伙伴" /> 公益 / 传播伙伴</label>
+            </fieldset>
+            <label class="field-label" for="message-text">你想反馈什么？</label>
+            <textarea id="message-text" name="message" rows="5" placeholder="例如：我最想改善的是拿杯子，手指张开时会疼，希望了解能不能先短时间试戴。"></textarea>
+            <label class="field-label" for="message-contact">联系方式（可选）</label>
+            <input id="message-contact" name="contact" type="text" placeholder="微信 / 邮箱 / 其他联系方式" />
+            <label class="consent"><input type="checkbox" required /> 我知道这不是医疗咨询，也不会在公开页面展示隐私信息。</label>
+            <button class="button primary" type="submit">添加一条留言示例</button>
+          </form>
+          <div class="message-list" id="message-list" aria-live="polite">
+            <article>
+              <span>病友 / 家属</span>
+              <p>最想改善的是吃饭夹菜。希望先知道试戴时哪里容易勒、需要谁在旁边帮忙。</p>
+            </article>
+            <article>
+              <span>3D 打印志愿者</span>
+              <p>可以帮忙复现一套样件，记录材料、打印参数和装配过程中容易失败的步骤。</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <script>
+      const scrollToHash = () => {
+        const target = window.location.hash && document.querySelector(window.location.hash);
+        if (target) {
+          window.setTimeout(() => target.scrollIntoView({ block: "start" }), 120);
+        }
+      };
+
+      const form = document.querySelector("#message-form");
+      const list = document.querySelector("#message-list");
+
+      window.addEventListener("load", scrollToHash);
+      window.addEventListener("hashchange", scrollToHash);
+
+      form?.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const data = new FormData(form);
+        const role = data.get("role");
+        const message = String(data.get("message") || "").trim();
+        if (!message) {
+          return;
+        }
+        const item = document.createElement("article");
+        item.innerHTML = `<span>${role}</span><p>${message}</p>`;
+        list.prepend(item);
+        form.reset();
+        form.querySelector('input[name="role"]')?.click();
+      });
+    </script>
+  </body>
+</html>
